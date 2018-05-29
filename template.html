@@ -1,0 +1,49 @@
+<html lang="en">                                   <!-- starts HTML and specifies the language!-->
+   <head>                                          <!--container for metadata (data about data) and is placed between the <html> tag and the <body> tag!-->
+      <link rel='stylesheet' href='styles.css'>    <!--loads the styles.css file from the same folder !-->
+      <title>CRUD</title>                 <!--required in HTML documents and used to define the title of the document!-->
+   </head>                                         <!--ends the head container!-->
+
+      <center>
+         <img border="0px" 
+               width="400px" height="100px" >
+      </center>
+      <br>
+      <br>
+      <center>
+         <form action='create.php' method = 'post'><!--needed to send/post info to php file !-->
+            <input type='text' placeholder='athlete' name='sport' class="advancedSearchTextBox">
+            <select id='select' name='className'>
+                 <option value="Basketball" >Basketball</option>
+                 <option value="Baseball" >Baseball</option>
+                 <option value="Football" >Football</option>
+            </select>
+           <select id='select' name='years'>
+                 <option value="1 years" >1</option>
+                 <option value="2 years" >2</option>
+                 <option value="3 years" >3</option>
+                 <option value="4 years" >4</option>
+                 <option value="5 years" >5</option>
+                 <option value="6 years" >6</option>
+                 <option value="7 years" >7</option>
+                 <option value="8 years" >8</option>
+                 <option value="9 years" >9</option>
+                 <option value="10 years" >10</option>
+                 <option value="11 years" >11</option>
+                 <option value="12 years" >12</option>
+            </select>
+            <input name = 'create' type = 'submit' value = 'Submit Info'>
+         </form>
+         Find the roster for the selected class
+         <form action= 'read.php' method = 'post'>
+            <select id='select' name='years'>
+               <option value="Basketball" >Basketball</option>
+               <option value="Baseball" >Baseball</option>
+               <option value="Football" >Football</option>
+            </select>
+               <p></p>
+            <input name = 'read'   type = 'submit' value = 'Find Info'>
+         </form>
+      </center>
+   </body>
+</html>
